@@ -1,2 +1,2 @@
 # todo-react
-Todo list, built with React
+Todo list, built with NodeJS, MongoDB, Expres, and React

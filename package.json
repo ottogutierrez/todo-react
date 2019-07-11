@@ -1,0 +1,33 @@
+{
+  "name": "todo-react",
+  "version": "1.0.0",
+  "description": "Todo List app, using the MERN stack",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ottogutierrez/todo-react.git"
+  },
+  "keywords": [
+    "todo",
+    "todo-list",
+    "react"
+  ],
+  "author": "Otto Gutierrez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ottogutierrez/todo-react/issues"
+  },
+  "homepage": "https://github.com/ottogutierrez/todo-react#readme",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "volleyball": "^1.5.1"
+  }
+}
