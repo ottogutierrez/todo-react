@@ -12,11 +12,13 @@
       * [X] ~~*1.4.1 Create PassportJS authentication strategy for signup route that accepts email, and password and saves it into MongoDB database*~~ [2019-07-12]
       * [X] ~~*1.4.2 Create Pre-save middleware to use BCrypt and hash password into database*~~ [2019-07-14]
       * [X] ~~*1.4.3 Return success (what other infomration to send?)*~~ [2019-07-14]
-    * [ ] 1.5 Signin Route (post)
+    * [X] ~~*1.5 Signin Route (post)*~~ [2019-07-14]
+      * [X] ~~*1.5.1 Create PassportJS authentication strategy*~~ [2019-07-14]
+      * [X] ~~*1.5.2 Implement authentication middleware on route*~~ [2019-07-14]
+      * [X] ~~*1.5.3 If authentication ok, create a new JWT and provide it in the response*~~ [2019-07-14]
 
-    * [ ] 1.6 Login Route (post)
-
-    * [ ] 1.7 API... (tbd)
+  
+    * [ ] 1.6 API... (tbd)
 
 
 
