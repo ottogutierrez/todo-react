@@ -2,6 +2,7 @@ const express = require('express')
 const volleyball = require('volleyball')
 require('dotenv').config()
 const mongoose = require('mongoose')
+require('./auth/index')
 
 const app = express()
 const port = process.env.PORT || 5000
@@ -21,7 +22,7 @@ mongoose.connection.on('error', error => console.log(error))
 
 
 // Setup routes
-const auth = require('./routes/auth')
+const auth = require('./routes/auth-routes')
 app.use('/auth', auth)
 
 // Start Server

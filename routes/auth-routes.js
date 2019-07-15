@@ -1,9 +1,16 @@
 const express = require('express')
 const router = express.Router()
+const passport = require('passport')
 
 // Signup
-router.get('/signup', (req,res)=>{
-  res.send('Sign up route')
+router.post('/signup', passport.authenticate('signup',{session:false}) ,(req,res)=>{
+  res.status(200).json({
+    message: 'Sign up successful',
+    user: {
+      email: req.user.email,
+      id: req.user._id
+    }
+  })
 })
 
 // Signin
