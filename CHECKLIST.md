@@ -19,6 +19,9 @@
 
   
     * [ ] 1.6 API... (tbd)
+        * [X] ~~*1.6.1 Create JWT passportJS strategy*~~ [2019-07-16]
+        * [ ] 1.6.2 Creat a test protected route implementing jwt strategy
+
 
 
 
