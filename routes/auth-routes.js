@@ -40,9 +40,6 @@ router.post('/signin', (req, res, next)=> {
   } )(req,res,next)
 })
 
-// Login
-router.get('/login', (req,res, next)=> {
-  res.send('Log in route')
-})
+
 
 module.exports = router

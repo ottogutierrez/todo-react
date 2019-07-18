@@ -18,7 +18,12 @@
       * [X] ~~*1.5.3 If authentication ok, create a new JWT and provide it in the response*~~ [2019-07-14]
 
   
-    * [ ] 1.6 API... (tbd)
+    * [X] ~~*1.6 API setup*~~ [2019-07-17]
+        * [X] ~~*1.6.1 Create JWT passportJS strategy*~~ [2019-07-16]
+        * [X] ~~*1.6.2 Creat a test protected route implementing jwt strategy*~~ [2019-07-17]
+    * [ ] 1.7 TODO-LIST API
+
+
 
 
 
