@@ -1,8 +1,8 @@
 const mongoose =  require('mongoose')
-const userModel = require('../model/index')
+const userModel = require('../model/user')
 const passport = require('passport')
 const LocalStrategy = require('passport-local').Strategy
-const JwtStrategy = require('passport-jwt')
+const JwtStrategy = require('passport-jwt').Strategy
 const ExtractJwt = require('passport-jwt').ExtractJwt
 
 
@@ -42,13 +42,14 @@ passport.use('signin', new LocalStrategy({
 }))
 
 const opts = {}
-opts.secretKey = process.env.JWT_SECRET
-opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken
+opts.secretOrKey = process.env.JWT_SECRET
+opts.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken()
 
 passport.use(new JwtStrategy(opts, async (jwt_payload, done)=> {
   try {
-    const user = await userModel.findOne({email:jwt_payload.email})
+    const user = await userModel.findOne({email:jwt_payload.user})
     if (!user) {
+      console.log('failed authentication', jwt_payload)
       done(null,false,{message: "Failed authentication, please sign in again"})
     }
 
