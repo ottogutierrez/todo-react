@@ -22,6 +22,11 @@
         * [X] ~~*1.6.1 Create JWT passportJS strategy*~~ [2019-07-16]
         * [X] ~~*1.6.2 Creat a test protected route implementing jwt strategy*~~ [2019-07-17]
     * [ ] 1.7 TODO-LIST API
+        * [X] ~~*1.7.1 Create a task*~~ [2019-07-19]
+        * [X] ~~*1.7.2 Delete a task*~~ [2019-07-22]
+        * [ ] 1.7.3 Update a task (complete it)
+        * [ ] 1.7.4 Read a task
+        * [ ] 1.7.6 Get all tasks
 
 
 

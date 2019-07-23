@@ -10,6 +10,7 @@ const port = process.env.PORT || 5000
 
 // Middleware
 app.use(express.urlencoded({extended: true}))
+app.use(express.json())
 app.use(volleyball)
 
 // Connect to MongoDB database
@@ -27,7 +28,7 @@ const auth = require('./routes/auth-routes')
 app.use('/auth', auth)
 
 const protected = require('./routes/api')
-app.use('/api', passport.authenticate('jwt',{session: false}), protected )
+app.use('/api/tasks', passport.authenticate('jwt',{session: false}), protected )
 
 // Start Server
 app.listen(port, ()=> console.log(`Server Listening on port ${port}`))
