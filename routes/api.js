@@ -48,5 +48,31 @@ router.delete('/:id', async (req,res,next)=> {
   }
 })
 
+// Toggle task
+router.post('/toggle/:id',async(req,res,next)=> {
+  try {
+    const id = req.params.id
+    const user = req.user.email
+    const task = await TaskModel.findOne({_id: id, user: user})
+    task.isComplete = !task.isComplete
+    const response = await task.save()
+    res.status(200).json({response})
+  } catch (error) {
+    res.status(500).json({error})
+  }
+})
+
+// Get all tasks
+router.post('/all', async(req,res,next)=> {
+  try {
+    const user = req.user.email
+    const tasks = await TaskModel.find({user: user})
+    res.status(200).json({tasks})
+  } catch (error) {
+    res.status(500).json({error})
+    
+  }
+})
+
 
 module.exports = router

@@ -8,7 +8,8 @@ const TaskSchema = new Schema({
   },
   isComplete: {
     type: Boolean,
-    required: true
+    required: true,
+    default: false
   },
   user: {
     type: String,

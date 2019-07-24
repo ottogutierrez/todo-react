@@ -24,9 +24,9 @@
     * [ ] 1.7 TODO-LIST API
         * [X] ~~*1.7.1 Create a task*~~ [2019-07-19]
         * [X] ~~*1.7.2 Delete a task*~~ [2019-07-22]
-        * [ ] 1.7.3 Update a task (complete it)
-        * [ ] 1.7.4 Read a task
-        * [ ] 1.7.6 Get all tasks
+        * [X] ~~*1.7.3 Update a task (complete it)*~~ [2019-07-23]
+        * [ ] 1.7.4 Read a task (not sure if this is needed)
+        * [X] ~~*1.7.6 Get all tasks*~~ [2019-07-23]
 
 
 
